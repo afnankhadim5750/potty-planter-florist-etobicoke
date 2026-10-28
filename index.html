@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Potty Planter Florist | Family Florist in Etobicoke Since 1971</title>
+<meta name="description" content="The Potty Planter Florist, a family owned and operated flower shop at 1500 Royal York Road, Etobicoke, serving the local area since 1971. Fresh flowers, wedding flowers, sympathy flowers, gifts and delivery.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#story">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top"><i class="bi bi-flower1" aria-hidden="true"></i><span>The Potty Planter <small>Florist &middot; Etobicoke</small></span></a>
+    <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="main-nav" aria-label="Open menu"><i class="bi bi-list" aria-hidden="true"></i></button>
+    <nav id="main-nav" class="main-nav" data-mobile-menu aria-label="Main navigation">
+      <a href="#story">Our Story</a>
+      <a href="#services">Flowers &amp; Gifts</a>
+      <a href="#collections">Collections</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#why">Why Locals Choose Us</a>
+      <a href="#delivery">Delivery</a>
+      <a href="#faq">Questions</a>
+      <a class="nav-cta" href="#order">Order Flowers</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO: full-screen photo with overlay -->
+  <section class="hero" aria-label="Introduction">
+    <picture>
+      <source srcset="images/hero-red-roses-1600.webp 1600w, images/hero-red-roses-800.webp 800w" sizes="100vw" type="image/webp">
+      <img src="images/hero-red-roses-1600.webp" alt="A bed of deep red roses in full bloom" fetchpriority="high">
+    </picture>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-kicker">Family owned and operated since 1971</p>
+      <h1>Flowers that say it properly, from a florist Etobicoke has trusted for generations.</h1>
+      <p class="hero-sub">Fresh bouquets, wedding flowers, sympathy arrangements and thoughtful gifts, made by hand at 1500 Royal York Road.</p>
+      <div class="hero-actions">
+        <a class="btn btn-accent" href="#order">Order Flowers</a>
+        <a class="btn btn-outline" href="tel:+14162457300"><i class="bi bi-telephone" aria-hidden="true"></i> (416) 245-7300</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trustbar" aria-label="At a glance">
+    <div class="trustbar-inner">
+      <div><i class="bi bi-flower2" aria-hidden="true"></i><strong>Since 1971</strong><span>Family owned and operated</span></div>
+      <div><i class="bi bi-star-fill" aria-hidden="true"></i><strong>4.8 rating</strong><span>237 reviews, Flower Shop Network</span></div>
+      <div><i class="bi bi-geo-alt" aria-hidden="true"></i><strong>Etobicoke, Toronto</strong><span>1500 Royal York Road</span></div>
+      <div><i class="bi bi-truck" aria-hidden="true"></i><strong>Local delivery &amp; pickup</strong><span>Across the local area</span></div>
+    </div>
+  </section>
+
+  <!-- ABOUT / STORY -->
+  <section id="story" class="section story">
+    <div class="wrap story-grid">
+      <div class="story-text">
+        <p class="eyebrow">Our story</p>
+        <h2>A family flower shop, rooted in Etobicoke since 1971.</h2>
+        <p>The Potty Planter Florist, also known as The Potty Planter &amp; Friends, has served Etobicoke for over 40 years. It is a family owned and operated shop, and that shows in the way orders are put together: carefully, personally, and with an eye for presentation.</p>
+        <p>Customers come back again and again, for birthdays and anniversaries, for weddings, and for the harder days too. Whether it is a dozen roses or a dish garden for a neighbour, every arrangement leaves the shop ready to be given.</p>
+        <ul class="story-points">
+          <li><i class="bi bi-check-lg" aria-hidden="true"></i> Family owned and operated since 1971</li>
+          <li><i class="bi bi-check-lg" aria-hidden="true"></i> Serving Etobicoke for over 40 years</li>
+          <li><i class="bi bi-check-lg" aria-hidden="true"></i> Fresh flowers, gifts and sympathy arrangements</li>
+        </ul>
+      </div>
+      <figure class="story-photo">
+        <img src="images/shop-front-800.webp" srcset="images/shop-front-800.webp 800w, images/shop-front-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 50vw" alt="Buckets of fresh roses and flowers outside a flower shop" loading="lazy">
+        <figcaption>Fresh flowers, ready to go, every day.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- SERVICES: tabbed -->
+  <section id="services" class="section services">
+    <div class="wrap">
+      <p class="eyebrow">Flowers &amp; gifts</p>
+      <h2>What the shop makes</h2>
+      <p class="section-lead">Choose a category to see what is on offer. Other items are priced on request, just ask in the shop or by phone.</p>
+      <div class="tabs" role="tablist" aria-label="Flower and gift categories">
+        <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-fresh" id="tab-fresh" data-tab="panel-fresh">Fresh Flowers</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-weddings" id="tab-weddings" data-tab="panel-weddings">Weddings</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-sympathy" id="tab-sympathy" data-tab="panel-sympathy">Sympathy</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-gifts" id="tab-gifts" data-tab="panel-gifts">Gifts &amp; More</button>
+      </div>
+
+      <div class="tab-panel active" id="panel-fresh" role="tabpanel" aria-labelledby="tab-fresh">
+        <img src="images/bouquet-mixed-800.webp" srcset="images/bouquet-mixed-800.webp 800w, images/bouquet-mixed-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 45vw" alt="A mixed bouquet of peach and cream roses with berries and greenery" loading="lazy">
+        <div>
+          <h3>Fresh flowers, made to order</h3>
+          <p>Daily bouquets and arrangements in roses, lilies, tulips, sunflowers and seasonal blooms, plus tropical and exotic flowers when available.</p>
+          <ul>
+            <li>Dozen roses, fresh flower bouquets and dish gardens</li>
+            <li>Tropical and exotic flowers</li>
+            <li>Seasonal arrangements for home and office</li>
+          </ul>
+          <p class="price-note">Fresh Flowers from $75.00 CAD. Dozen Roses $84.00 CAD. Delivery charge not included.</p>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="panel-weddings" role="tabpanel" aria-labelledby="tab-weddings" hidden>
+        <img src="images/bouquet-bridal-800.webp" srcset="images/bouquet-bridal-800.webp 800w, images/bouquet-bridal-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 45vw" alt="A blush bridal bouquet of peonies and roses tied with a silk ribbon" loading="lazy">
+        <div>
+          <h3>Wedding flowers</h3>
+          <p>Bridal bouquets, bridesmaid flowers, buttonholes and ceremony arrangements, planned with the couple and made for the day itself.</p>
+          <ul>
+            <li>Bridal and bridesmaid bouquets</li>
+            <li>Ceremony and reception flowers</li>
+            <li>Buttonholes and corsages</li>
+          </ul>
+          <p class="price-note">Wedding flowers are priced on request. Call the shop to talk through your date and plans.</p>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="panel-sympathy" role="tabpanel" aria-labelledby="tab-sympathy" hidden>
+        <img src="images/orchids-white-800.webp" srcset="images/orchids-white-800.webp 800w, images/orchids-white-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 45vw" alt="White orchid blooms, calm and understated" loading="lazy">
+        <div>
+          <h3>Sympathy and funeral flowers</h3>
+          <p>Quiet, respectful arrangements for funerals and memorials, including standing sprays, wreaths and sympathy bouquets, delivered with care.</p>
+          <ul>
+            <li>Sympathy bouquets and baskets</li>
+            <li>Funeral sprays and wreaths</li>
+            <li>Flowers for memorial services</li>
+          </ul>
+          <p class="price-note">Sympathy and Funeral Flowers from $150.00 CAD. Delivery charge not included.</p>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="panel-gifts" role="tabpanel" aria-labelledby="tab-gifts" hidden>
+        <img src="images/sunflowers-800.webp" srcset="images/sunflowers-800.webp 800w, images/sunflowers-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 45vw" alt="A bunch of bright yellow sunflowers" loading="lazy">
+        <div>
+          <h3>Gifts and more</h3>
+          <p>Something to go with the flowers, or on its own: gifts for new arrivals, treats, and cards for every occasion.</p>
+          <ul>
+            <li>Silk and artificial flowers</li>
+            <li>Baby gifts and stuffed animals</li>
+            <li>Candy and chocolate, plus greeting cards</li>
+            <li>Dish gardens from $65.99 CAD</li>
+          </ul>
+          <p class="price-note">Dish Gardens $65.99 CAD. Delivery charge not included.</p>
+        </div>
+      </div>
+      <p class="price-footnote">Prices are in Canadian dollars, as published on the shop's public listing. Delivery charge is not included in the prices shown.</p>
+    </div>
+  </section>
+
+  <!-- SIGNATURE COLLECTIONS -->
+  <section id="collections" class="section collections">
+    <div class="wrap">
+      <p class="eyebrow">Signature collections</p>
+      <h2>Four arrangements Etobicoke keeps coming back for</h2>
+      <div class="card-grid">
+        <article class="card">
+          <img src="images/rose-red-dew-800.webp" srcset="images/rose-red-dew-800.webp 800w, images/rose-red-dew-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 25vw" alt="A single deep red rose with water drops on its petals" loading="lazy">
+          <h3>Dozen Roses</h3>
+          <p>The classic gesture, done well: a dozen fresh roses, wrapped and presented with care.</p>
+          <p class="card-price">$84.00 CAD</p>
+        </article>
+        <article class="card">
+          <img src="images/bouquet-coral-800.webp" srcset="images/bouquet-coral-800.webp 800w, images/bouquet-coral-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 25vw" alt="A coral rose and tulip bouquet in a glass jar" loading="lazy">
+          <h3>Fresh Flowers</h3>
+          <p>A mixed seasonal bouquet, bright and generous, for birthdays, thanks and just because.</p>
+          <p class="card-price">$75.00 CAD</p>
+        </article>
+        <article class="card">
+          <img src="images/calla-pink-800.webp" srcset="images/calla-pink-800.webp 800w, images/calla-pink-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 25vw" alt="Pink calla lilies among deep green leaves" loading="lazy">
+          <h3>Sympathy Flowers</h3>
+          <p>Calm, respectful arrangements for funerals and memorials, delivered with care.</p>
+          <p class="card-price">$150.00 CAD</p>
+        </article>
+        <article class="card">
+          <img src="images/tulips-pink-800.webp" srcset="images/tulips-pink-800.webp 800w, images/tulips-pink-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 25vw" alt="Pink tulips in a glass jar tied with a ribbon" loading="lazy">
+          <h3>Dish Gardens</h3>
+          <p>A planted garden that keeps growing long after the occasion, for home or office.</p>
+          <p class="card-price">$65.99 CAD</p>
+        </article>
+      </div>
+      <p class="price-footnote">Prices in Canadian dollars, as published on the shop's public listing. Delivery charge not included.</p>
+    </div>
+  </section>
+
+  <!-- STICKY-SCROLL GALLERY -->
+  <section id="gallery" class="section gallery">
+    <div class="wrap">
+      <p class="eyebrow">Gallery</p>
+      <h2>From the workbench</h2>
+      <p class="section-lead">Scroll through the flowers: roses, lilies, tulips, orchids and seasonal blooms, each arranged by hand.</p>
+      <div class="sticky-gallery">
+        <figure class="sticky-figure">
+          <img id="sticky-img" src="images/rose-blush-800.webp" srcset="images/rose-blush-800.webp 800w, images/rose-blush-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 45vw" alt="A single blush rose in a glass bottle, lit by soft sunlight" loading="lazy">
+          <figcaption id="sticky-cap">A single blush rose, simply presented.</figcaption>
+        </figure>
+        <div class="scroll-steps">
+          <div class="step" data-img="rose-blush" data-cap="A single blush rose, simply presented."><h3>Roses</h3><p>Red, blush and cream roses, from a single stem to a full dozen.</p></div>
+          <div class="step" data-img="lily-pink" data-cap="A pink stargazer lily, open and fragrant."><h3>Lilies</h3><p>Bold stargazer lilies that open beautifully over days.</p></div>
+          <div class="step" data-img="tulip-single" data-cap="One pink tulip, photographed against a soft pink background."><h3>Tulips</h3><p>Clean, bright tulips for spring tables and simple gifts.</p></div>
+          <div class="step" data-img="orchids-white" data-cap="White orchid blooms, calm and understated."><h3>Orchids and exotics</h3><p>Tropical and exotic flowers for something a little different.</p></div>
+          <div class="step" data-img="blossom-pink" data-cap="Pink cherry blossom against a blue sky."><h3>Seasonal blooms</h3><p>What is in season, arranged while it is at its best.</p></div>
+          <div class="step" data-img="begonias-red" data-cap="A mass of red begonia blooms."><h3>Planted colour</h3><p>Dish gardens and planted pieces that last beyond the bouquet.</p></div>
+        </div>
+      </div>
+      <div class="thumb-row" aria-label="More flower photos">
+        <button class="thumb" data-full="images/blossom-white-1600.webp" data-alt="White cherry blossom branches against a pale sky"><img src="images/blossom-white-800.webp" alt="White cherry blossom branches against a pale sky" loading="lazy"></button>
+        <button class="thumb" data-full="images/sunflowers-1600.webp" data-alt="A bunch of bright yellow sunflowers"><img src="images/sunflowers-800.webp" alt="A bunch of bright yellow sunflowers" loading="lazy"></button>
+        <button class="thumb" data-full="images/bouquet-mixed-1600.webp" data-alt="A mixed bouquet of peach and cream roses with berries and greenery"><img src="images/bouquet-mixed-800.webp" alt="A mixed bouquet of peach and cream roses with berries and greenery" loading="lazy"></button>
+        <button class="thumb" data-full="images/hero-red-roses-1600.webp" data-alt="A bed of deep red roses in full bloom"><img src="images/hero-red-roses-800.webp" alt="A bed of deep red roses in full bloom" loading="lazy"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY LOCALS CHOOSE -->
+  <section id="why" class="section why">
+    <div class="wrap">
+      <p class="eyebrow">Why locals choose us</p>
+      <h2>What Etobicoke customers keep saying</h2>
+      <p class="section-lead">Drawn from the themes of the shop's public reviews, not from any single quoted review.</p>
+      <div class="why-grid">
+        <article><i class="bi bi-arrow-repeat" aria-hidden="true"></i><h3>Repeat customers</h3><p>People come back year after year, for the same occasions and new ones, and send friends and family too.</p></article>
+        <article><i class="bi bi-heart" aria-hidden="true"></i><h3>Friendly, caring staff</h3><p>The team takes time over each order and treats every occasion, happy or sad, with genuine care.</p></article>
+        <article><i class="bi bi-gift" aria-hidden="true"></i><h3>Great presentation</h3><p>Arrangements arrive beautifully wrapped and finished, ready to hand over or to be delivered.</p></article>
+        <article><i class="bi bi-truck" aria-hidden="true"></i><h3>Reliable local delivery and pickup</h3><p>Orders reach homes and venues across the local area, on time and in good shape.</p></article>
+      </div>
+      <p class="rating-line"><i class="bi bi-star-fill" aria-hidden="true"></i> 4.8 rating from 237 reviews, as listed on Flower Shop Network.</p>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA / DELIVERY -->
+  <section id="delivery" class="section delivery">
+    <div class="wrap delivery-grid">
+      <div>
+        <p class="eyebrow">Delivery</p>
+        <h2>Delivered across the local area, or ready for pickup</h2>
+        <p>Order by phone or email, or drop into the shop at 1500 Royal York Road. Delivery is available in the local area, and orders can also be picked up in store.</p>
+        <ul class="delivery-list">
+          <li><i class="bi bi-geo-alt" aria-hidden="true"></i> 1500 Royal York Road, Etobicoke, ON M9P 3B6, Canada</li>
+          <li><i class="bi bi-telephone" aria-hidden="true"></i> <a href="tel:+14162457300">(416) 245-7300</a></li>
+          <li><i class="bi bi-envelope" aria-hidden="true"></i> <a href="mailto:thepottyplanter@rogers.com">thepottyplanter@rogers.com</a></li>
+          <li><i class="bi bi-clock" aria-hidden="true"></i> Listed as open 10am to 6pm. Please call to confirm today's hours.</li>
+        </ul>
+      </div>
+      <div class="map-frame">
+        <iframe title="Map of 1500 Royal York Road, Etobicoke" src="https://maps.google.com/maps?q=1500%20Royal%20York%20Road%2C%20Etobicoke%2C%20ON%20M9P%203B6&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section faq">
+    <div class="wrap faq-wrap">
+      <p class="eyebrow">Questions</p>
+      <h2>Before you order</h2>
+      <details>
+        <summary>Do you deliver in Etobicoke?</summary>
+        <p>Yes, delivery is available in the local area, and orders can also be picked up from the shop at 1500 Royal York Road. Delivery charges are not included in the listed prices, so ask when you order.</p>
+      </details>
+      <details>
+        <summary>Can I order wedding flowers?</summary>
+        <p>Yes, wedding flowers are one of the shop's services. Call (416) 245-7300 to talk through your date, colours and plans.</p>
+      </details>
+      <details>
+        <summary>Do you carry gifts as well as flowers?</summary>
+        <p>Yes. The shop carries baby gifts, stuffed animals, candy and chocolate, greeting cards, and silk and artificial flowers, alongside fresh arrangements.</p>
+      </details>
+      <details>
+        <summary>What are your hours?</summary>
+        <p>The public listing shows the shop open 10am to 6pm on the day checked. Please call (416) 245-7300 to confirm today's hours before visiting.</p>
+      </details>
+      <details>
+        <summary>How do I place an order?</summary>
+        <p>Call (416) 245-7300, email thepottyplanter@rogers.com, or use the order form below. Tell the shop the occasion, the recipient and the delivery or pickup details.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT / ORDER -->
+  <section id="order" class="section order">
+    <div class="wrap order-grid">
+      <div>
+        <p class="eyebrow">Order flowers</p>
+        <h2>Start an order</h2>
+        <p>Fill in the form and it will open an email to the shop with your details filled in. Or skip the form and call direct.</p>
+        <p class="order-contact"><a class="btn btn-accent" href="tel:+14162457300"><i class="bi bi-telephone" aria-hidden="true"></i> Call (416) 245-7300</a></p>
+        <address>
+          The Potty Planter Florist<br>
+          1500 Royal York Road<br>
+          Etobicoke, ON M9P 3B6, Canada<br>
+          <a href="mailto:thepottyplanter@rogers.com">thepottyplanter@rogers.com</a>
+        </address>
+      </div>
+      <form id="order-form" class="order-form" action="#" method="get">
+        <label for="f-name">Your name</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
+        <label for="f-occasion">Occasion</label>
+        <select id="f-occasion" name="occasion">
+          <option>Birthday</option>
+          <option>Anniversary</option>
+          <option>Wedding flowers</option>
+          <option>Sympathy flowers</option>
+          <option>Thank you</option>
+          <option>Just because</option>
+          <option>Other</option>
+        </select>
+        <fieldset>
+          <legend>Delivery or pickup</legend>
+          <label><input type="radio" name="fulfilment" value="Delivery" checked> Delivery</label>
+          <label><input type="radio" name="fulfilment" value="Pickup"> Pickup in store</label>
+        </fieldset>
+        <label for="f-message">Message for the shop</label>
+        <textarea id="f-message" name="message" rows="4" placeholder="What flowers, for whom, and when do you need them?"></textarea>
+        <button class="btn btn-accent" type="submit">Send Order Enquiry by Email</button>
+        <p class="form-note">This opens your email app addressed to thepottyplanter@rogers.com with your details included.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-brand"><i class="bi bi-flower1" aria-hidden="true"></i> The Potty Planter Florist</p>
+      <p>1500 Royal York Road, Etobicoke, ON M9P 3B6, Canada<br>
+      <a href="tel:+14162457300">(416) 245-7300</a> &middot; <a href="mailto:thepottyplanter@rogers.com">thepottyplanter@rogers.com</a></p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="#story">Our Story</a>
+      <a href="#services">Flowers &amp; Gifts</a>
+      <a href="#collections">Collections</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">Questions</a>
+      <a href="#order">Order Flowers</a>
+    </nav>
+  </div>
+  <p class="footer-disclaimer">Design concept by CodeCrafters Hub &mdash; not the official website of The Potty Planter Florist</p>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <button class="lightbox-close" aria-label="Close photo viewer"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
