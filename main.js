@@ -1,5 +1,5 @@
-// The Potty Planter Florist: mobile menu, tabbed services, scroll-spy,
-// sticky-scroll gallery, lightbox, order form (mailto).
+// The Potty Planter Florist (light botanical atelier redesign):
+// mobile menu, scroll-spy, gallery lightbox, order form (mailto).
 (function () {
   "use strict";
 
@@ -39,55 +39,14 @@
     spySections.forEach(function (s) { spy.observe(s); });
   }
 
-  // Tabbed services.
-  var tabBtns = document.querySelectorAll(".tab-btn");
-  tabBtns.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      tabBtns.forEach(function (b) {
-        b.classList.remove("active");
-        b.setAttribute("aria-selected", "false");
-      });
-      document.querySelectorAll(".tab-panel").forEach(function (p) {
-        p.classList.remove("active");
-        p.hidden = true;
-      });
-      btn.classList.add("active");
-      btn.setAttribute("aria-selected", "true");
-      var panel = document.getElementById(btn.getAttribute("data-tab"));
-      if (panel) {
-        panel.classList.add("active");
-        panel.hidden = false;
-      }
-    });
-  });
-
-  // Sticky-scroll gallery: swap the sticky photo as each step scrolls by.
-  var stickyImg = document.getElementById("sticky-img");
-  var stickyCap = document.getElementById("sticky-cap");
-  var steps = document.querySelectorAll(".scroll-steps .step");
-  if ("IntersectionObserver" in window && stickyImg && steps.length) {
-    var gallerySpy = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        var name = entry.target.getAttribute("data-img");
-        stickyImg.src = "images/" + name + "-800.webp";
-        stickyImg.srcset =
-          "images/" + name + "-800.webp 800w, images/" + name + "-1600.webp 1600w";
-        stickyImg.alt = entry.target.getAttribute("data-cap") || "";
-        if (stickyCap) stickyCap.textContent = entry.target.getAttribute("data-cap") || "";
-      });
-    }, { rootMargin: "-45% 0px -45% 0px" });
-    steps.forEach(function (s) { gallerySpy.observe(s); });
-  }
-
-  // Lightbox for gallery thumbnails.
+  // Lightbox for the masonry gallery tiles.
   var lightbox = document.getElementById("lightbox");
   var lightboxImg = document.getElementById("lightbox-img");
-  document.querySelectorAll(".thumb").forEach(function (thumb) {
-    thumb.addEventListener("click", function () {
+  document.querySelectorAll(".masonry-tile").forEach(function (tile) {
+    tile.addEventListener("click", function () {
       if (!lightbox || !lightboxImg) return;
-      lightboxImg.src = thumb.getAttribute("data-full");
-      lightboxImg.alt = thumb.getAttribute("data-alt") || "";
+      lightboxImg.src = tile.getAttribute("data-full");
+      lightboxImg.alt = tile.getAttribute("data-alt") || "";
       lightbox.hidden = false;
     });
   });
