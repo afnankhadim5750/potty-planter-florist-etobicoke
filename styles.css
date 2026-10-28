@@ -170,6 +170,28 @@ h3{font-size:1.3rem}
 .lightbox img{max-width:92vw;max-height:88vh;object-fit:contain}
 .lightbox-close{position:absolute;top:20px;right:20px;background:var(--accent);border:none;color:var(--base);font-size:1.4rem;padding:10px 14px;cursor:pointer}
 
+
+/* PROFESSIONAL POLISH - 28 Oct 2026: richer hierarchy, composed cards, tighter gallery */
+.section h2{font-size:clamp(2rem,3.4vw,2.9rem);letter-spacing:-.01em}
+.section h2::after{content:"";display:block;width:56px;height:3px;background:var(--accent);margin-top:16px}
+.order h2::after{background:var(--base)}
+.card{transition:transform .25s ease,box-shadow .25s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.card .card-price{font-size:1.2rem}
+.why-grid article{padding:30px 26px;transition:transform .25s ease,border-color .25s ease}
+.why-grid article:hover{transform:translateY(-3px);border-color:var(--accent)}
+.why-grid i{font-size:2.2rem;display:inline-block;background:rgba(169,188,155,.14);padding:12px;border-radius:50%}
+.why-grid p{font-size:1rem;line-height:1.6}
+.scroll-steps{counter-reset:step}
+.scroll-steps .step{min-height:52vh;counter-increment:step}
+.scroll-steps .step h3{font-size:2rem}
+.scroll-steps .step h3::before{content:counter(step,decimal-leading-zero);display:block;font-size:1rem;letter-spacing:.2em;color:var(--accent);margin-bottom:10px}
+.faq summary{font-size:1.05rem}
+.faq details{transition:border-color .2s ease}
+.faq details:hover{border-color:var(--accent)}
+.btn{transition:transform .2s ease,background .2s ease,color .2s ease}
+.btn-accent:hover{transform:translateY(-2px)}
+
 @media (max-width:900px){
   .menu-toggle{display:block}
   .main-nav{display:none;position:absolute;top:100%;left:0;right:0;z-index:210;background:var(--base);flex-direction:column;align-items:flex-start;padding:12px 24px 24px;border-bottom:1px solid var(--line)}
